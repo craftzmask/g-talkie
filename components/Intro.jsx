@@ -5,6 +5,8 @@ import iconSrc from '../assets/app-icon.png'
 
 import Button from '../components/Button'
 
+import theme from '../theme'
+
 const Intro = () => {
   return (
     <SafeAreaView style={styles.container}>
@@ -33,10 +35,11 @@ const styles = StyleSheet.create({
   container: {
     height: '100%',
     alignItems: 'center',
+    backgroundColor: theme.colors.background
   },
   title: {
     fontSize: 30,
-    color: '#D6665C',
+    color: theme.colors.textPrimary,
     textAlign: 'center'
   },
   paragraph: {
